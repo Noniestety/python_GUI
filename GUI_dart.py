@@ -66,10 +66,9 @@ player_1_history.grid(row=0, column=0, rowspan= 10, columnspan= 2, padx=10, pady
 #definicja okna do wpisywania wyniku
 player_score = tk.Entry(master=window)
 player_score.grid(row=11, column=0, rowspan=1, columnspan= 2, padx=10, pady=10, sticky='nsew')
-label = tk.Label(player_score, text="Wprowadź tekst:")
+label = tk.Label(player_score)
+label.configure(text = 'Wprowadz wynik')
 label.pack(pady=(0,10))
-
-
 
 padx = 20
 pady = 10
